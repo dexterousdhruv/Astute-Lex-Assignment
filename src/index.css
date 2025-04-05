@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import "tailwindcss";
+@plugin "flowbite-react/plugin/tailwindcss";
+@source "../.flowbite-react/class-list.json";
+
+
+@theme {
+  --font-poppins: "Poppins", "sans-serif"; 
+  --color-dark-night: #00212B;  
+}
+/* #00212B */
+/* #00212B */
+
+:where(.ant-steps-finish-icon) > svg {
+  fill: #fff !important;
+}
+
+:where(.css-dev-only-do-not-override-12ai9s4).ant-steps .ant-steps-item-tail::after {
+  height: 2px;
+}
+
+.ant-select-selector:active {
+  border-color: black !important;
+}
+
+.ant-upload-drag  {
+  height: 240px !important;
+  border: 1px dashed black !important ;
+  background-color:white !important ;
+}
+
+@media (max-width: 384px) {
+  .ant-upload-drag  {
+    height: 260px !important;
+  }
+}
